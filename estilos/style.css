@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700&family=Muli:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: 'Arima Madurai';
+}
+
+body {
+  background-color: #E4FBFF;
+}
+
+main {
+  height: 75vh;
+  text-align: center;
+  padding: 1% 8%;
+  font-size: 4rem;
+}
+
+main h1{
+font-size: 7rem;
+text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.664);
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  list-style: none;
+  height: 8rem;
+  font-size: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color:#FFC5DE;
+  border: solid black 2px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 95vw;
+  margin: auto;
+  height: 75px;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  border-radius: 10px;
+  transition: ease-in-out 0.7s;
+}
+
+.menu>li {
+  transition: ease-in-out 0.7s;
+}
+
+.menu>li>a:hover {
+  border-bottom: rgb(0, 0, 0) solid 3px;
+  padding-bottom: .9rem;
+  transition: ease-in-out 0.2s;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  font-size: 2.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  width: 12rem;
+}
+
+.logo_carrinho {
+  height: 45px;
+}
+
+#itensCarrinho>li{
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+.carousel-item {
+  height: 75vh;
+}
+
+#banner1 {
+  background: black url(../Banner/banner_1.png) center/cover no-repeat;
+
+}
+#banner2 {
+  background: black url(../Banner/banner_2.jpg) center/cover no-repeat;
+
+}
+#banner3 {
+  background: black url(../Banner/banner_3.png) center/cover no-repeat;
+
+}
+#banner4 {
+  background: black url(../Banner/banner_4.jpg) center/cover no-repeat;
+
+}
+#banner5 {
+  background: black url(../Banner/banner_5.jpeg) center/cover no-repeat;
+
+}
+
+
+.carousel-item>a {
+  text-align: none;
+  color: white;
+}
+
+footer {
+  list-style-type: none;
+  width: 100%;
+  background-color: #FFC5DE;
+  color: black;
+  text-align: left;
+  border-top: 0.2rem solid rgb(0, 0, 0);
+  padding: 1%;
+  position: absolute;
+  bottom: -75rem; 
+}
+
+footer>nav>ul>li>a {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: ease-in-out 0.1s;
+  font-size: 1.8rem;
+}
+
+footer>nav>ul>.traco {
+  border-right: 1px solid #000000;
+  padding: 0 5vw 0 0;
+  text-align: center;
+}
+
+footer>nav>ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+footer>nav>ul>li>a:hover {
+  border-bottom: 2px solid white;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 0.05rem;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 3rem;
+  height: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger div {
+  width: 3rem;
+  height: 0.4rem;
+  background: white;
+  border-radius: 0.2rem;
+}
+
+.patrocinadores {
+  width: 30rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.patrocinador {
+  margin-top: 2rem;
+  width: 4rem;
+}
+.historia{
+  width: 50rem;
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+  margin: 10vh auto;
+  background-color: white;
+  padding: 5%;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.644);
+  
+}
+.historia>h1{
+  text-align: center;
+  font-size: 4rem;
+}
+.historia>p{
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0000007a;
+    border: none;
+  }
+
+  .menu.active {
+    display: flex;
+    top: 0;
+    margin-top: 0;
+    background-color: #9a0519;
+    height: auto;
+    z-index: 1;
+    border-bottom: 3px solid white;
+  }
+
+  .logo {
+    z-index: 2;
+    width: 10rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu>li>a:hover {
+    border-bottom: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0000007a;
+    color: white;
+    border-bottom: solid white 2px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  footer>nav>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+
+  #banner1 {
+    background: black url(../banners-celulares/1.png) top/cover no-repeat;
+  
+  }
+  #banner2 {
+    background: black url(../banners-celulares/2.png) bottom/cover no-repeat;
+  
+  }
+  #banner3 {
+    background: black url(../banners-celulares/3.png) bottom/cover no-repeat;
+  
+  }
+  #banner4 {
+    background: black url(../banners-celulares/4.png) center/cover no-repeat;
+  
+  }
+  #banner5 {
+    background: black url(../Banner/banner_4.jpg) center/cover no-repeat;
+  
+  }
+
+  .patrocinadores {
+    flex-direction: row;
+  }
+
+  footer>nav>ul>.traco {
+    border-right: none;
+  }
+
+  footer>nav>ul>li>a:hover {
+    border-bottom: none;
+  }
+
+  #abrirCarrinho {
+    right: 2rem;
+    top: 0;
+
+
+  }
+}
+
+/* Estilos para o cardápio */
+#cardapio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-center{
+  color: white;
+  text-shadow: #9a0519 2px 2px 2px;
+}
+
+.cardapio-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ffffff4d;
+  align-items: center;
+  width: 60%;
+  font-size: 2rem;
+  color: white;
+  background-color: #9a0519;
+  padding: 1rem;
+}
+
+.preco {
+  font-weight: bold;
+}
+
+.btn-info {
+  margin-top: 1rem;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: #0000007a;
+  color: white;
+}
+
+.modal-body {
+  background-color: #9a0519;
+  color: white;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para o modal com maior especificidade */
+.modal-dialog .modal-content .modal-title,
+.modal-dialog .modal-content .modal-body p,
+.modal-dialog .modal-content .modal-body button {
+  font-size: 1.6rem;
+  /* Define o tamanho da fonte para 2rem */
+}
+
+/* Estilos para o carrinho */
+#carrinho {
+  list-style-type: none;
+  height: 70vh;
+  width: 70vw;
+  position: fixed;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  font-size: 2rem;
+  z-index: 999;
+}
+
+/* Estilos para o carrinho no menu */
+#carrinho-menu {
+  position: relative;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+/* Estilos para o botão do carrinho */
+#carrinho-menu img {
+  height: 45px;
+}
+
+#abrirCarrinho {
+  height: 4rem;
+  width: 12rem;
+  padding: 0%;
+  position: fixed;
+  right: 2rem;
+  bottom: 30rem;
+  background-color: cadetblue;
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  transition: ease-in-out 0.5;
+
+}
+
+/*milena*/ 
+.listings{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+  margin: 50px 15px;
+}
+
+.product{
+  border: solid #FF79BF 1px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  width: 25%;
+  margin: 30px 15px;
+  background-color: #FFC5DE;
+  border-radius: 50%;
+  box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.product img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.product h4{
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  font-family: 'Muli', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  box-sizing: border-box;
+  justify-self: center;
+  display: block;
+  text-shadow: 2px 2px 2px black;
+}
+
+.product:hover {
+  color: #FF79BF;
+  transform: scale(1.05);
+}
+
+.product:hover h4{
+  bottom: 35%;
+  transition: ease-in-out 0.5s;
+  filter:none;
+  z-index: 99;
+  
+}
+
+product:hover img{  
+  filter: blur(5px);
+}
+
+@media screen and (max-width: 767px){
+ 
+  p, strong{
+    text-align: center;
+      font-size: 1.4rem;
+  }
+  .product{
+      width: 35%;      
+      margin: 10px 5px;
+  }
+  .product h4{
+      font-size: 14px;
+      bottom: 2%;
+      transform: translate(-15%);
+  }
+}
