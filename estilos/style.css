@@ -15,7 +15,7 @@ main {
   min-height: 75vh; /*de "height para min-height deixa a altura da página flexível e evita o espaço sobrando*/
   text-align: center;
   padding: 1% 8%;
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 main h1{
@@ -429,12 +429,13 @@ footer>nav>ul>li>a:hover {
 .product h4{
   position: absolute;
   bottom: -100%;
-  width: 100%;
+  left: 5%;
+  width: 90%;
   font-family: 'Muli', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
   text-align: center;
   box-sizing: border-box;
-  justify-self: center;
   display: block;
   text-shadow: 2px 2px 2px black;
 }
@@ -447,13 +448,8 @@ footer>nav>ul>li>a:hover {
 .product:hover h4{
   bottom: 35%;
   transition: ease-in-out 0.5s;
-  filter:none;
   z-index: 99;
   
-}
-
-product:hover img{  
-  filter: blur(5px);
 }
 
 @media screen and (max-width: 768px){
@@ -467,8 +463,9 @@ product:hover img{
       margin: 10px 5px;
   }
   .product h4{
-      font-size: 14px;
-      bottom: 10%;
-      transform: translate(-15%);
+      font-size: 1.5rem;
+      bottom: 30%;
+      width: 90%;
+      left: 5%;
   }
 }
