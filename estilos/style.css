@@ -12,10 +12,10 @@ body {
 }
 
 main {
-  height: 75vh;
+  min-height: 75vh; /*de "height para min-height deixa a altura da página flexível e evita o espaço sobrando*/
   text-align: center;
   padding: 1% 8%;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 main h1{
@@ -104,7 +104,6 @@ a {
 
 }
 
-
 .carousel-item>a {
   text-align: none;
   color: white;
@@ -118,8 +117,8 @@ footer {
   text-align: left;
   border-top: 0.2rem solid rgb(0, 0, 0);
   padding: 1%;
-  position: absolute;
-  bottom: -75rem; 
+  position: relative;
+  bottom: 0;
 }
 
 footer>nav>ul>li>a {
@@ -196,6 +195,7 @@ footer>nav>ul>li>a:hover {
 .historia>p{
   text-align: center;
 }
+
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -244,8 +244,8 @@ footer>nav>ul>li>a:hover {
   .logo {
     display: none;
   }
-
-  footer>nav>ul {
+  
+    footer>nav>ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -456,7 +456,7 @@ product:hover img{
   filter: blur(5px);
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
  
   p, strong{
     text-align: center;
@@ -468,7 +468,7 @@ product:hover img{
   }
   .product h4{
       font-size: 14px;
-      bottom: 2%;
+      bottom: 10%;
       transform: translate(-15%);
   }
 }
