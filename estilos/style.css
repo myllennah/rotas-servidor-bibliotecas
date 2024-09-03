@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  min-height: 75vh; /*de "height para min-height deixa a altura da página flexível e evita o espaço sobrando*/
+  min-height: 75vh; /*de "height para min-height deixa a altura da página flexível e evita o espaço sobrando -mm*/
   text-align: center;
   padding: 1% 8%;
   font-size: 4rem;
@@ -41,7 +41,7 @@ text-transform: uppercase;
   font-weight: bold;
   width: 95vw;
   margin: auto;
-  height: 75px;
+  height: 75px; /*escolher uma height? essa ou linha 33 -mm*/
   margin-top: 45px;
   margin-bottom: 35px;
   border-radius: 10px;
@@ -118,7 +118,6 @@ footer {
   border-top: 0.2rem solid rgb(0, 0, 0);
   padding: 1%;
   position: relative;
-  bottom: 0;
 }
 
 footer>nav>ul>li>a {
@@ -402,7 +401,7 @@ footer>nav>ul>li>a:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 15px;
-  margin: 50px 15px;
+  margin: 6% 2%;
 }
 
 .product{
@@ -456,7 +455,10 @@ footer>nav>ul>li>a:hover {
  
   p, strong{
     text-align: center;
-      font-size: 1.4rem;
+    font-size: 1.4rem;
+  }
+  main{
+    margin-top: 7%;
   }
   .product{
       width: 35%;      
