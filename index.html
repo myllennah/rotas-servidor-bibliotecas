@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="estilos/style.css" />
-  <title> LEILA</title>
+  <title> Leila Bolos - Home </title>
 </head>
 
 <body>
@@ -21,87 +21,126 @@
       <div></div>
     </div>
     <ul class="menu">
-      <li> <img class="logo" src="logos/logo6.png" alt="logo_leila" /></li>
-      <li> <img class="logo" style="width: 25rem;" src="logos/Bolos da Leila.png" alt="logo_leila" /></li>
+      <li> <img class="logo" src="logos/logo6.png" alt="logo_leilabolos" /></li>
       <li></li>
       <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li><a href="cardapio.html">Produtos</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="#produtos_pai">Produtos</a></li>
       <li><a href="contato.html">Contato</a></li>
       <li>
         <!-- Carrinho no Menu -->
-        <div id="carrinho-menu">
+        <div id="carrinho-menu"> 
           <a href="#">
-            <img class="logo_usuario" src="logos/do-utilizador.png" alt="logo_usuario" />
-          </a>
-          <a href="#">
-            <img class="logo_carrinho" src="logos/carrinho-de-compras.png" alt="logo_carrinho" />
+            <img class="logo_carrinho" src="icone/carrinho.png" alt="logo_carrinho" />
           </a>
         </div>
       </li>
     </ul>
 
     <!-- Botão para abrir o carrinho -->
-    <button style="display: none;" id="abrirCarrinho" class="btn btn-warning mt-3">Ver Carrinho</button>
+    <button style="display: none;"  id="abrirCarrinho" class="btn btn-warning mt-3">Ver Carrinho</button>
 
-    <!-- Carrinho -->
-    <div id="carrinho">
-      <h2>Seu Carrinho</h2>
-      <ul id="itensCarrinho"></ul>
-      <p id="totalCarrinho">Total: R$ 0,00</p>
-      <button id="fecharCarrinho" class="btn btn-secondary">Fechar</button>
-    </div>
+      <!-- Carrinho -->
+      <div id="carrinho">
+        <h2>Seu Carrinho</h2>
+        <ul id="itensCarrinho"></ul>
+        <p id="totalCarrinho">Total: R$ 0,00</p>
+        <button id="fecharCarrinho" class="btn btn-secondary">Fechar</button>
+      </div>
   </header>
 
   <main>
-    <h1>Doces</h1>
-    <strong>Delicie-se com nossos doces!</strong>
-    <p>Por apenas R$90,00 o cento, nossos doces são ideais para festas, eventos ou para um toque especial no seu dia. Personalize seu pedido e torne qualquer ocasião ainda melhor. Faça seu pedido agora!</p>
-    <div class="listings">
-      <a href="#" class="product">
-        <img src="./img/brigtrad.jpg" alt="Brigadeiro tradicional de chocolate">
-        <h4>Brigadeiro tradicional</h4>
+    <section id="projetos">
+      <div id="carouselProjetos" class="carousel slide" data-ride="carousel"  >
+        <div class="carousel-inner">
+          <div class="carousel-item  active" id="banner1" >
+            <a href="#" target="_blank">
+              <div class="d-flex justify-content-center">
+                <div class="projeto">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item"  id="banner2">
+            <a href="#" target="_blank">
+              <div class="d-flex justify-content-center">
+                <div class="projeto">
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <a href="#" target="_blank">
+            <div class="carousel-item "  id="banner3">
+
+              <div class="d-flex justify-content-center">
+                <div class="projeto">
+                  <h1></h1>
+                </div>
+              </div>
+          </a>
+        </div>
+        <div class="carousel-item "  id="banner4">
+            <div class="d-flex justify-content-center">
+              <div class="projeto">
+                <h1></h1>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item "  id="banner5">
+          <a href="#" target="_blank">
+            <div class="d-flex justify-content-center">
+              <div class="projeto">
+                <h1></h1>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselProjetos" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
       </a>
-      <a href="#" class="product">
-        <img src="./img/beijinho.jpg" alt="Beijinhos">
-        <h4>Beijinho</h4>
+      <a class="carousel-control-next" href="#carouselProjetos" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
       </a>
-      <a href="#" class="product">
-        <img src="./img/bichodepe.png" alt="Doce bicho de pé">
-        <h4>Bicho de pé</h4>
-      </a>
-      <a href="#" class="product">
-        <img src="./img/brigchurros.png" alt="Brigadeiro sabor churros">
-        <h4>Brigadeiro de churros</h4>
-      </a>
-      <a href="#" class="product">
-        <img src="./img/brigpacoca.jpg" alt="Brigadeiro de paçoça">
-        <h4>Brigadeiro de paçoca</h4>
-      </a>
-      <a href="#" class="product">
-        <img src="./img/misto.jpg" alt="Cento de doces mistos">
-        <h4>Doces mistos</h4>
-      </a>
-    </div>
+      </div>
+    </section>
+
+
+    <section id="produtos_pai">
+      <div class="sobre_produtos_filho">
+        <h2>produtos</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum velit, ut fugit ratione numquam quod, eveniet maxime, sed laboriosam eum et perferendis recusandae? Quos, hic recusandae magnam reiciendis deleniti in.</p>
+      </div>
+      <div class="img_produtos_filho">
+        <a href="#"><img src="banners/bolos.jpg" alt="bolos"></a>
+        <div>
+          <a href="#"><img src="banners/salgados.png" alt="salgados"></a>
+          <a href="#"><img src="banners/brigadeiro.jpg" alt="doces"></a>
+        </div>
+      </div>
+    </section>
+    
   </main>
+
   <footer>
     <nav>
       <ul>
-        <li class="traco"><a href="#">Sobre a Leila</a></li>
+        <li class="traco"><a href="#">Sobre nós</a></li>
         <li class="traco"><a href="#">Políticas de Privacidade</a></li>
-        <li class="traco" style="border-right: none;"><a href="#">Contato</a></li>
+        <li class="traco"><a href="#">Fale Conosco</a></li>
+        <li class="traco"><a href="#">Termos de Uso</a></li>
+        <li class="traco" style="border-right: none;"><a href="#">Trabalhe conosco</a></li>
       </ul>
-      <ul class="patrocinadores">
-        <li><img class="patrocinador" src="icone/local.png" alt=""></li>
-        <li><img class="patrocinador" src="icone/whatsapp.png" alt=""></li>
-        <li><img class="patrocinador" src="icone/envelope.png" alt=""></li>
-        <li><a href="https://www.instagram.com/leilaabolos/"><img class="patrocinador" src="icone/instagram.png" alt=""></a></li>
+      <ul class="patrocinadores" >
+        <li><img class="patrocinador" src="icone/icone_ifood.png" alt=""></li>
+        <li><img class="patrocinador" src="icone/icone_rappi.png" alt=""></li>
 
       </ul>
     </nav>
-
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

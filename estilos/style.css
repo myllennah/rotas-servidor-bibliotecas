@@ -5,6 +5,7 @@
   padding: 0;
   font-size: 62.5%;
   font-family: 'Arima Madurai';
+  scroll-behavior: smooth;
 }
 
 body {
@@ -79,34 +80,76 @@ a {
   font-size: 2rem;
 }
 
+
+
 .carousel-item {
   height: 75vh;
 }
+.carousel-inner{
+  border-radius: 20px;
+}
 
 #banner1 {
-  background: black url(../Banner/banner_1.png) center/cover no-repeat;
+  background: black url(../banners/bolo1.jpg) center/cover no-repeat;
 
 }
 #banner2 {
-  background: black url(../Banner/banner_2.jpg) center/cover no-repeat;
+  background: black url(../banners/bolo2.jpg) center/cover no-repeat;
 
 }
 #banner3 {
-  background: black url(../Banner/banner_3.png) center/cover no-repeat;
+  background: black url(../banners/bolo3.jpg) center/cover no-repeat;
 
 }
 #banner4 {
-  background: black url(../Banner/banner_4.jpg) center/cover no-repeat;
+  background: black url(../banners/bolo4.jpg) center/cover no-repeat;
 
 }
 #banner5 {
-  background: black url(../Banner/banner_5.jpeg) center/cover no-repeat;
+  background: black url(../banners/bolo2.jpg) center/cover no-repeat;
 
 }
 
 .carousel-item>a {
   text-align: none;
   color: white;
+}
+
+#produtos_pai{
+  display: flex;
+  width: 80vw;
+  height: 60vh;
+  padding: 10%;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.27);
+  margin: auto;
+  align-items: center;
+}
+.sobre_produtos_filho{
+  width: 25vw;
+  background-color: #FF79BF;
+}
+
+.img_produtos_filho{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  height: 40vh;
+  background-color: aqua;
+}
+.img_produtos_filho>a>img{
+  height: 100%;
+}
+.img_produtos_filho>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+.img_produtos_filho>div>a>img{
+  width: 100px;
+  height: 100%;
 }
 
 footer {
@@ -250,6 +293,8 @@ footer>nav>ul>li>a:hover {
     justify-content: space-evenly;
     list-style-type: none;
   }
+/* banners para celular
+
 
   #banner1 {
     background: black url(../banners-celulares/1.png) top/cover no-repeat;
@@ -271,6 +316,8 @@ footer>nav>ul>li>a:hover {
     background: black url(../Banner/banner_4.jpg) center/cover no-repeat;
   
   }
+
+  */
 
   .patrocinadores {
     flex-direction: row;
