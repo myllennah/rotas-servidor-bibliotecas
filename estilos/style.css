@@ -135,21 +135,23 @@ a {
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
-  height: 40vh;
+  height: 50vh;
+  width: 30vw;
   background-color: aqua;
 }
 .img_produtos_filho>a>img{
   height: 100%;
+  border-radius: 15px;
 }
 .img_produtos_filho>div{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 40%;
+  width: 50%;
 }
 .img_produtos_filho>div>a>img{
-  width: 100px;
-  height: 100%;
+    height: 24vh;
+  border-radius: 15px;
 }
 
 footer {
