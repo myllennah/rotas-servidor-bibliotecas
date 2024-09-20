@@ -124,10 +124,11 @@ a {
   background-color: rgba(0, 0, 0, 0.27);
   margin: auto;
   align-items: center;
+  margin: 20vh auto;
 }
 .sobre_produtos_filho{
   width: 25vw;
-  background-color: #FF79BF;
+ 
 }
 
 .img_produtos_filho{
@@ -136,8 +137,7 @@ a {
   justify-content: space-between;
   gap: 30px;
   height: 50vh;
-  width: 30vw;
-  background-color: aqua;
+  width: 33vw;
 }
 .img_produtos_filho>a>img{
   height: 100%;
@@ -147,7 +147,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+
 }
 .img_produtos_filho>div>a>img{
     height: 24vh;
