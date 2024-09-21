@@ -6,6 +6,7 @@
   font-size: 62.5%;
   font-family: 'Arima Madurai';
   scroll-behavior: smooth;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
@@ -87,6 +88,7 @@ a {
 }
 .carousel-inner{
   border-radius: 20px;
+  margin-top: 25vh;
 }
 
 #banner1 {
@@ -121,14 +123,17 @@ a {
   height: 60vh;
   padding: 10%;
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.27);
   margin: auto;
   align-items: center;
   margin: 20vh auto;
 }
 .sobre_produtos_filho{
   width: 25vw;
+  font-size: 2.3rem;
  
+}
+.sobre_produtos_filho  h2{
+  font-size: 4rem;
 }
 
 .img_produtos_filho{
@@ -136,12 +141,18 @@ a {
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
-  height: 50vh;
+  height: 65vh;
   width: 33vw;
+  transition: ease-in-out .5s;
 }
 .img_produtos_filho>a>img{
   height: 100%;
   border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 4px;
+  transition: ease-in-out;
+}
+.img_produtos_filho>a> img:hover{
+  transform: scale(1.1)
 }
 .img_produtos_filho>div{
   display: flex;
@@ -149,11 +160,28 @@ a {
   justify-content: space-between;
 
 }
-.img_produtos_filho>div>a>img{
-    height: 24vh;
-  border-radius: 15px;
+
+.button{
+  background-color: #FF79BF;
+  padding:0  2%;
+  border-radius: 10px;
+
+  
 }
 
+.button:hover{
+  text-decoration: none;
+  color: #000000;
+}
+
+.img_produtos_filho>div>a>img{
+    height: 23rem;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 4px;
+}
+.img_produtos_filho>div>a>img:hover{
+  transform: scale(1.1)
+}
 footer {
   list-style-type: none;
   width: 100%;
@@ -255,8 +283,9 @@ footer>nav>ul>li>a:hover {
   .menu.active {
     display: flex;
     top: 0;
+    width: 92vw;
     margin-top: 0;
-    background-color: #9a0519;
+    background-color:#FFC5DE;
     height: auto;
     z-index: 1;
     border-bottom: 3px solid white;
@@ -288,12 +317,36 @@ footer>nav>ul>li>a:hover {
   .logo {
     display: none;
   }
+  #produtos_pai{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 85vw;
+    
+  }
+
+  .img_produtos_filho{
+    transform: translate(-90%);
+  }
+  .sobre_produtos_filho{
+    width: 70vw;
+    text-align: justify;
+  }
+  .sobre_produtos_filho h2{
+    text-align: center;
+  }
+ 
   
     footer>nav>ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
+  }
+
+  .carousel-inner{
+    border-radius: 20px;
+    margin-top: 5vh;
   }
 /* banners para celular
 
