@@ -5,6 +5,8 @@
   padding: 0;
   font-size: 62.5%;
   font-family: 'Arima Madurai';
+  scroll-behavior: smooth;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
@@ -12,17 +14,22 @@ body {
 }
 
 main {
-  min-height: 75vh; /*de "height para min-height deixa a altura da página flexível e evita o espaço sobrando -mm*/
+  min-height: 75vh;
+  /*de "height para min-height deixa a altura da página flexível e evita o espaço sobrando -mm*/
   text-align: center;
   padding: 1% 8%;
   font-size: 4rem;
 }
 
-main h1{
-font-size: 7rem;
-text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.664);
-font-weight: bold;
-text-transform: uppercase;
+main h1 {
+  font-size: 7rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.664);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h2{
+  font-size: 5rem;
+  margin: 10rem auto;
 }
 
 .menu {
@@ -34,14 +41,15 @@ text-transform: uppercase;
   font-size: 3rem;
   justify-content: space-evenly;
   align-items: center;
-  background-color:#FFC5DE;
+  background-color: #FFC5DE;
   border: solid black 2px;
   color: black;
   text-transform: uppercase;
   font-weight: bold;
   width: 95vw;
   margin: auto;
-  height: 75px; /*escolher uma height? essa ou linha 33 -mm*/
+  height: 75px;
+  /*escolher uma height? essa ou linha 33 -mm*/
   margin-top: 45px;
   margin-bottom: 35px;
   border-radius: 10px;
@@ -74,39 +82,127 @@ a {
   height: 45px;
 }
 
-#itensCarrinho>li{
+#itensCarrinho>li {
   list-style-type: none;
   font-size: 2rem;
 }
+
+
 
 .carousel-item {
   height: 75vh;
 }
 
+.carousel-inner {
+  border-radius: 20px;
+  margin-top: 25vh;
+}
+
 #banner1 {
-  background: black url(../Banner/banner_1.png) center/cover no-repeat;
+  background: black url(../banners/bolo1.jpg) center/cover no-repeat;
 
 }
+
 #banner2 {
-  background: black url(../Banner/banner_2.jpg) center/cover no-repeat;
+  background: black url(../banners/bolo2.jpg) center/cover no-repeat;
 
 }
+
 #banner3 {
-  background: black url(../Banner/banner_3.png) center/cover no-repeat;
+  background: black url(../banners/bolo3.jpg) center/cover no-repeat;
 
 }
+
 #banner4 {
-  background: black url(../Banner/banner_4.jpg) center/cover no-repeat;
+  background: black url(../banners/bolo4.jpg) center/cover no-repeat;
 
 }
+
 #banner5 {
-  background: black url(../Banner/banner_5.jpeg) center/cover no-repeat;
+  background: black url(../banners/bolo5.jpg) center/cover no-repeat;
 
 }
 
 .carousel-item>a {
   text-align: none;
   color: white;
+}
+
+#produtos_pai {
+  display: flex;
+  width: 80vw;
+  height: 120vh;
+  padding: 3%;
+  justify-content: space-around;
+  margin: auto;
+  align-items: center;
+  margin: auto;
+}
+
+.sobre_produtos_filho {
+  width: 25vw;
+  font-size: 2.3rem;
+
+}
+
+.sobre_produtos_filho h2 {
+  font-size: 7rem;
+}
+
+.img_produtos_filho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  height: 65vh;
+  width: 33vw;
+  transition: ease-in-out .5s;
+}
+
+.img_produtos_filho>a>img {
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: #00000080 1px 1px 4px;
+  transition: ease-in-out;
+}
+
+.img_produtos_filho>a>img:hover {
+  transform: scale(1.1);
+}
+
+.img_produtos_filho>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.button {
+  background-color: #FF79BF;
+  padding: 0 2%;
+  border-radius: 10px;
+
+
+
+}
+.link_logo:hover{
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.img_produtos_filho>div>a>img {
+  height: 23rem;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 4px;
+}
+
+.img_produtos_filho>div>a>img:hover {
+  transform: scale(1.1)
 }
 
 footer {
@@ -176,7 +272,8 @@ footer>nav>ul>li>a:hover {
   margin-top: 2rem;
   width: 4rem;
 }
-.historia{
+
+.historia {
   width: 50rem;
   font-size: 2.5rem;
   color: rgb(0, 0, 0);
@@ -185,14 +282,39 @@ footer>nav>ul>li>a:hover {
   padding: 5%;
   border-radius: 15px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.644);
-  
+
 }
-.historia>h1{
+
+.historia>h1 {
   text-align: center;
   font-size: 4rem;
 }
-.historia>p{
+
+.historia>p {
   text-align: center;
+}
+
+@media (max-width: 1027px) {
+  #produtos_pai {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 85vw;
+
+  }
+
+  .sobre_produtos_filho {
+    width: 70vw;
+    text-align: justify;
+  }
+
+  .img_produtos_filho {
+    margin-top: 10vh;
+    transform: translate(-50%);
+  }
+
+
+
 }
 
 @media (max-width: 768px) {
@@ -210,8 +332,9 @@ footer>nav>ul>li>a:hover {
   .menu.active {
     display: flex;
     top: 0;
+    width: 92vw;
     margin-top: 0;
-    background-color: #9a0519;
+    background-color: #FFC5DE;
     height: auto;
     z-index: 1;
     border-bottom: 3px solid white;
@@ -243,13 +366,64 @@ footer>nav>ul>li>a:hover {
   .logo {
     display: none;
   }
-  
-    footer>nav>ul {
+
+  .img_produtos_filho>a>img:hover,
+  .img_produtos_filho>div>a>img:hover {
+    transform: scale(1);
+  }
+  .img_produtos_filho>div{
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .img_produtos_filho>a>img,
+  .img_produtos_filho>div>a>img {
+    width: 21rem;
+    height: auto;
+  }
+
+  #produtos_pai {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 85vw;
+
+  }
+
+  .img_produtos_filho {
+    transform: translate(-75%);
+    height: auto;
+  }
+
+  .sobre_produtos_filho h2 {
+    text-align: center;
+  }
+
+  .sobre_produtos_filho{
+    padding: 1rem;
+    text-align: justify;
+  }
+  .button{
+    position: absolute;
+    right: 50%;
+    transform: translate(70%);
+    margin: 2rem;
+  }
+
+
+  footer>nav>ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
   }
+
+  .carousel-inner {
+    border-radius: 20px;
+    margin-top: 5vh;
+  }
+
+  /* banners para celular
+
 
   #banner1 {
     background: black url(../banners-celulares/1.png) top/cover no-repeat;
@@ -271,6 +445,8 @@ footer>nav>ul>li>a:hover {
     background: black url(../Banner/banner_4.jpg) center/cover no-repeat;
   
   }
+
+  */
 
   .patrocinadores {
     flex-direction: row;
@@ -295,24 +471,29 @@ footer>nav>ul>li>a:hover {
 /* Estilos para o cardápio */
 #cardapio {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
-.text-center{
+
+.text-center {
   color: white;
-  text-shadow: #9a0519 2px 2px 2px;
+  text-shadow: #FF79BF 2px 2px 2px;
 }
 
 .cardapio-item {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   padding: 0.5rem 0;
   border-bottom: 1px solid #ffffff4d;
   align-items: center;
-  width: 60%;
+  width: auto;
   font-size: 2rem;
   color: white;
-  background-color: #9a0519;
+  background-color: #FF79BF;
   padding: 1rem;
 }
 
@@ -326,13 +507,13 @@ footer>nav>ul>li>a:hover {
 
 .modal-header,
 .modal-footer {
-  background-color: #0000007a;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
 .modal-body {
-  background-color: #9a0519;
-  color: white;
+  background-color:aliceblue;
+  color: black;
 }
 
 .modal-img {
@@ -394,8 +575,8 @@ footer>nav>ul>li>a:hover {
 
 }
 
-/*milena*/ 
-.listings{
+/*milena*/
+.listings {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -404,7 +585,7 @@ footer>nav>ul>li>a:hover {
   margin: 6% 2%;
 }
 
-.product{
+.product {
   border: solid #FF79BF 1px;
   text-decoration: none;
   color: white;
@@ -413,19 +594,19 @@ footer>nav>ul>li>a:hover {
   margin: 30px 15px;
   background-color: #FFC5DE;
   border-radius: 50%;
-  box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
 }
 
-.product img{
+.product img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.product h4{
+.product h4 {
   position: absolute;
   bottom: -100%;
   left: 5%;
@@ -444,30 +625,51 @@ footer>nav>ul>li>a:hover {
   transform: scale(1.05);
 }
 
-.product:hover h4{
+.product:hover h4 {
   bottom: 35%;
   transition: ease-in-out 0.5s;
   z-index: 99;
-  
+
 }
 
-@media screen and (max-width: 768px){
- 
-  p, strong{
+@media screen and (max-width: 768px) {
+
+  p,
+  strong {
     text-align: center;
     font-size: 1.4rem;
   }
-  main{
+
+  main {
     margin-top: 7%;
   }
-  .product{
-      width: 35%;      
-      margin: 10px 5px;
+  #cardapio {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-around;
   }
-  .product h4{
-      font-size: 1.5rem;
-      bottom: 30%;
-      width: 90%;
-      left: 5%;
+
+  .cardapio-item {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+  }
+
+  .product {
+    width: 35%;
+    margin: 10px 5px;
+  }
+
+  .product h4 {
+    font-size: 1.5rem;
+    bottom: 30%;
+    width: 90%;
+    left: 5%;
   }
 }
