@@ -9,12 +9,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="estilos/style.css" />
-  <title> La Romana Pizzaria - Contato </title>
+  <title>Contato - Bolos da Leila</title>
 </head>
 
-<body>
+<body class=" icon-bg">
   <header>
-
     <div class="hamburger">
       <div></div>
       <div></div>
@@ -50,7 +49,26 @@
   </header>
 
   <main>
-   
+  <h1>Contato</h1>
+  <!-- Formulário de contato -->
+   <div class="form-contato">
+    <h5>Faça a sua encomenda!</h5>
+    <form action="contato.php" method="POST">
+      <div class="campo-form">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" required/>
+      </div>
+      <div class="campo-form">
+        <label for="telefone">Telefone de contato</label>
+        <input type="text" name="telefone" required/>
+      </div>
+      <div class="campo-form">
+        <label for="Mensagem">Mensagem</label>
+        <input type="textarea" name="mensagem" required/>
+      </div>
+      <input type="submit" value="Enviar"/>    
+    </form>
+   </div>
     
   </main>
 

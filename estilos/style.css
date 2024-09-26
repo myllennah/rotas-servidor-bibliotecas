@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700&family=Muli:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700&family=Muli:wght@400;700&display=swap&');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
   margin: 0;
@@ -8,6 +9,36 @@
   scroll-behavior: smooth;
   transition: all 0.2s ease-in-out;
 }
+
+/* Adição 25-09 - pág contato */
+
+.icon-bg{
+  background-image: url(../img/bg-icons2.png);
+  background-repeat: repeat;
+  background-size: 35vw;
+}
+
+.projeto h1{
+  font-family: 'Pacifico';
+  font-size: 9rem;
+  text-transform: none;
+  font-weight: lighter;
+  color: #d6e4a4;
+  padding-top: 5%;
+}
+
+.form-contato{
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contato h6{
+  font-family: 'Muli';
+  font-size: 3rem;
+}
+
+/* Fim da adição */
 
 body {
   background-color: #E4FBFF;
