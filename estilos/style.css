@@ -10,7 +10,11 @@
   transition: all 0.2s ease-in-out;
 }
 
-/* Adição 25-09 - pág contato */
+/* Adição - pág contato */
+main{
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+}
 
 .icon-bg{
   background-image: url(../img/bg-icons2.png);
@@ -27,15 +31,59 @@
   padding-top: 5%;
 }
 
-.form-contato{
-  width: 40vw;
+.pag-contato{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.form-contato h6{
-  font-family: 'Muli';
-  font-size: 3rem;
+.form-contato{  
+  width: 35vw;
+  padding: 5rem;
+}
+
+form div{  
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+form label{  
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+  text-align: left;
+}
+
+form input, form textarea{
+  border-radius: 1rem;
+}
+
+.form-contato h5{
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+input[type="submit"]{
+  background-color:#d6e4a4;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.mapa{
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+  border-left: 0.3rem black solid;
+  padding: 5rem;
+}
+
+.mapa p{
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
 }
 
 /* Fim da adição */
@@ -238,6 +286,9 @@ a {
 
 footer {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   background-color: #FFC5DE;
   color: black;
@@ -247,7 +298,25 @@ footer {
   position: relative;
 }
 
-footer>nav>ul>li>a {
+/* Adição 29/09 */
+.nome-footer{
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  align-self: center;
+}
+
+footer p{
+  font-family: 'Muli', sans-serif;
+  font-size: 1.6rem;
+}
+
+footer div{
+  display: flex;
+  flex-direction: row;
+}
+/* Fim da adição */
+
+footer>div>nav>ul>li>a {
   color: rgb(0, 0, 0);
   font-size: 1.2rem;
   text-decoration: none;
@@ -255,20 +324,20 @@ footer>nav>ul>li>a {
   font-size: 1.8rem;
 }
 
-footer>nav>ul>.traco {
+footer>div>nav>ul>.traco {
   border-right: 1px solid #000000;
   padding: 0 5vw 0 0;
   text-align: center;
 }
 
-footer>nav>ul {
+footer>div>nav>ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
 }
 
-footer>nav>ul>li>a:hover {
+footer>div>nav>ul>li>a:hover {
   border-bottom: 2px solid white;
   text-decoration: none;
   color: white;
