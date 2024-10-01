@@ -19,7 +19,11 @@ main{
 .icon-bg{
   background-image: url(../img/bg-icons2.png);
   background-repeat: repeat;
-  background-size: 35vw;
+  background-size: 35vw;  
+}
+
+.icon-bg>img{
+  opacity: 0.1;
 }
 
 .projeto h1{
@@ -60,8 +64,9 @@ form input, form textarea{
 }
 
 .form-contato h5{
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: bold;
+  text-wrap: nowrap;
 }
 
 input[type="submit"]{
@@ -69,6 +74,7 @@ input[type="submit"]{
   font-size: 2.5rem;
   font-weight: bold;
   padding: 1.5rem;
+  margin: 1rem;
   border: none;
   border-radius: 1rem;
   cursor: pointer;
@@ -289,13 +295,12 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   background-color: #FFC5DE;
   color: black;
   text-align: left;
   border-top: 0.2rem solid rgb(0, 0, 0);
   padding: 1%;
-  position: relative;
 }
 
 /* Adição 29/09 */
@@ -361,16 +366,14 @@ footer>div>nav>ul>li>a:hover {
   border-radius: 0.2rem;
 }
 
-.patrocinadores {
-  width: 30rem;
-  margin: auto;
+.footer-contato{
   display: flex;
-  align-items: center;
+  font-size: 2rem;
 }
 
-.patrocinador {
-  margin-top: 2rem;
-  width: 4rem;
+.socials-icons {
+  margin: 1rem;
+  width: 3.5rem;
 }
 
 .historia {
@@ -458,9 +461,45 @@ footer>div>nav>ul>li>a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #0000007a;
+    background-color: #FFC5DE;
     color: white;
     border-bottom: solid white 2px;
+  }
+
+  /* footer */
+  
+.nome-footer{
+  display: none;
+}
+
+.socials-icons{
+  width: 3rem;
+  margin: 0.5rem;
+}
+
+.footer-contato{
+  padding: 1rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.footer-contato p{
+  font-size: 1.5rem;
+}
+
+/* Página de contato */
+  .pag-contato{
+    flex-direction: column;
+  }
+
+  .form-contato{  
+    width: 100vw;
+    padding: 2rem;
+  }
+  
+  .mapa{
+    padding: 2rem;
+    border-left: none;
   }
 
   .logo {
