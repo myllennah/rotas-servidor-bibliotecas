@@ -326,7 +326,7 @@ form input, form textarea{
   text-wrap: nowrap;
 }
 
-input[type="submit"]{
+#buttonEnviar{
   background-color:#d6e4a4;
   font-size: 2.5rem;
   font-weight: bold;
