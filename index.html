@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="estilos/style.css" />
-  <title> Bolos da Leila - Home </title>
+  <title> Leila Bolos - Home </title>
 </head>
 
 <body id="top">
@@ -20,9 +20,13 @@
       <div></div>
       <div></div>
     </div>
-    <ul class="menu" style="position: fixed; left: 2rem; z-index: 99;">
+    <ul class="menu index_menu">
       <li> <a class="link_logo" href="#top"><img class="logo" src="logos/logo6.png" alt="logo_leilabolos" /></a></li>
-      <li> <img class="logo" src="logos/Bolos da Leila.png" style="width: 22rem;" alt="logo_leilabolos" /></li>
+      <li> <a href="index.html"><img class="logo" src="logos/Bolos da Leila.png" style="width: 22rem;"
+            alt="logo_leilabolos" /></a></li>
+      <li></li>
+      <li></li>
+      <li><a href="historia.html">História</a></li>
       <li><a href="#produtos_pai">Produtos</a></li>
       <li><a href="contato.html">Contato</a></li>
       <li>
@@ -30,14 +34,6 @@
         <div id="carrinho-menu">
           <a href="#">
             <img class="logo_carrinho" src="logos/carrinho-de-compras.png" alt="logo_carrinho" />
-          </a>
-        </div>
-      </li>
-      <li>
-        <!-- Página do Cliente -->
-        <div id="carrinho-menu">
-          <a href="#">
-            <img class="logo_carrinho" src="icone/cliente1.png" alt="Ícone área de cliente" />
           </a>
         </div>
       </li>
@@ -63,7 +59,7 @@
             <a href="#" target="_blank">
               <div class="d-flex justify-content-center">
                 <div class="projeto">
-                  <h1>Bolos da Leila</h1>
+                  <h1>LEILA BOLOS</h1>
                 </div>
               </div>
             </a>
@@ -72,7 +68,7 @@
             <a href="#" target="_blank">
               <div class="d-flex justify-content-center">
                 <div class="projeto">
-                  <h1>Bolos da Leila</h1>
+                  <h1>frango frito</h1>
                 </div>
               </div>
             </a>
@@ -82,7 +78,7 @@
 
               <div class="d-flex justify-content-center">
                 <div class="projeto">
-                  <h1>Bolos da Leila</h1>
+                  <h1>LEILA BOLOS</h1>
                 </div>
               </div>
           </a>
@@ -90,7 +86,7 @@
         <div class="carousel-item " id="banner4">
           <div class="d-flex justify-content-center">
             <div class="projeto">
-              <h1>Bolos da Leila</h1>
+              <h1>LEILA BOLOS</h1>
             </div>
           </div>
           </a>
@@ -99,7 +95,7 @@
           <a href="#" target="_blank">
             <div class="d-flex justify-content-center">
               <div class="projeto">
-                <h1>Bolos da Leila</h1>
+                <h1>LEILA BOLOS</h1>
               </div>
             </div>
           </a>
@@ -119,7 +115,7 @@
 
     <section id="produtos_pai">
       <div class="sobre_produtos_filho">
-        <h2>Produtos</h2>
+        <h2 class="titulo_sobre">Produtos</h2>
         <p>Lorem ipsum dolor, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni aperiam ipsa quis repellat
           cum obcaecati nulla quas qui rem sunt quia quam nemo amet porro eaque accusantium, eos Lorem ipsum dolor sit
           amet consectetur adipisicing elit. Accusantium labore neque animi deserunt. Quae delectus doloribus maxime
@@ -131,7 +127,7 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequatur placeat incidunt, quos recusandae
           pariatur aperiam perspiciatis officia! Maiores quasi sequi animi nam omnis maxime dicta incidunt nemo
           similique nesciunt?</p>
-        <a class="button" href="#">Ver mais</a>
+        <a class="button" href="cardapio.html">Cardápio</a>
       </div>
       <div class="img_produtos_filho">
         <a href="#"><img src="banners/bolos.jpg" alt="bolos"></a>
@@ -145,19 +141,22 @@
   </main>
 
   <footer>
-    <span class="nome-footer">Bolos da Leila</span>
-    <div>
-      <p>Horário de atendimento:<br>seg a sáb das 9h às 18h</p>
-      <nav>            
-      <ul class="patrocinadores">
-        <li><img class="patrocinador" src="icone/local.png" alt="icone_mapa"></li>
-        <li><img class="patrocinador" src="icone/whatsapp.png" alt="icone_whatsapp"></li>
-        <li><img class="patrocinador" src="icone/envelope.png" alt="logo_envelope"></li>
-        <li><a href="https://www.instagram.com/leilaabolos/" target="_blank" ><img class="patrocinador" src="icone/instagram.png"
-              alt="instagram"></a></li>
+    <nav class="direcao_footer" >
+      <ul>
+        <li><a href="#">Horário de atendimento:
+            seg a sáb das 9h às 18h.</a></li>
       </ul>
-      </nav>
-    </div>
+
+      <ul class="logos_footer">
+        <li><a href="contato.html"><img class="logo_footer_filho"
+              src="icone/local.png" alt="icone_mapa"></a></li>
+        <li><img class="logo_footer_filho" src="icone/whatsapp.png" alt="icone_whatsapp"></li>
+        <li><img class="logo_footer_filho" src="icone/envelope.png" alt="logo_envelope"></li>
+        <li><a href="https://www.instagram.com/leilaabolos/" target="_blank"><img class="logo_footer_filho"
+              src="icone/instagram.png" alt="instagram"></a></li>
+
+      </ul>
+    </nav>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

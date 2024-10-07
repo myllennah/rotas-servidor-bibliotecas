@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700&family=Muli:wght@400;700&display=swap&');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700&family=Muli:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -9,90 +8,6 @@
   scroll-behavior: smooth;
   transition: all 0.2s ease-in-out;
 }
-
-/* Adição - pág contato */
-main{
-  font-family: 'Muli', sans-serif;
-  font-size: 2rem;
-}
-
-.icon-bg{
-  background-image: url(../img/bg-icons2.png);
-  background-repeat: repeat;
-  background-size: 35vw;  
-}
-
-.icon-bg>img{
-  opacity: 0.1;
-}
-
-.projeto h1{
-  font-family: 'Pacifico';
-  font-size: 9rem;
-  text-transform: none;
-  font-weight: lighter;
-  color: #d6e4a4;
-  padding-top: 5%;
-}
-
-.pag-contato{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.form-contato{  
-  width: 35vw;
-  padding: 5rem;
-}
-
-form div{  
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  font-size: 2rem;
-}
-
-form label{  
-  font-family: 'Muli', sans-serif;
-  font-size: 2rem;
-  text-align: left;
-}
-
-form input, form textarea{
-  border-radius: 1rem;
-}
-
-.form-contato h5{
-  font-size: 3rem;
-  font-weight: bold;
-  text-wrap: nowrap;
-}
-
-input[type="submit"]{
-  background-color:#d6e4a4;
-  font-size: 2.5rem;
-  font-weight: bold;
-  padding: 1.5rem;
-  margin: 1rem;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-}
-
-.mapa{
-  font-family: 'Muli', sans-serif;
-  font-size: 2rem;
-  border-left: 0.3rem black solid;
-  padding: 5rem;
-}
-
-.mapa p{
-  font-family: 'Muli', sans-serif;
-  font-size: 2rem;
-}
-
-/* Fim da adição */
 
 body {
   background-color: #E4FBFF;
@@ -112,7 +27,13 @@ main h1 {
   font-weight: bold;
   text-transform: uppercase;
 }
-h2{
+
+.titulo_sobre {
+  font-size: 3rem;
+  margin: 2rem
+}
+
+h2 {
   font-size: 5rem;
   margin: 10rem auto;
 }
@@ -139,6 +60,10 @@ h2{
   margin-bottom: 35px;
   border-radius: 10px;
   transition: ease-in-out 0.7s;
+}
+
+.index_menu{
+  position: fixed; left: 2rem; z-index: 99;
 }
 
 .menu>li {
@@ -263,14 +188,16 @@ a {
 }
 
 .button {
-  background-color: #FF79BF;
+  background-color: #FFC5DE;
   padding: 0 2%;
   border-radius: 10px;
 
 
 
+
 }
-.link_logo:hover{
+
+.link_logo:hover {
   text-decoration: none;
   border-bottom: none;
 }
@@ -292,36 +219,16 @@ a {
 
 footer {
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   background-color: #FFC5DE;
   color: black;
   text-align: left;
   border-top: 0.2rem solid rgb(0, 0, 0);
   padding: 1%;
+  position: relative;
 }
 
-/* Adição 29/09 */
-.nome-footer{
-  font-family: 'Pacifico', cursive;
-  font-size: 3rem;
-  align-self: center;
-}
-
-footer p{
-  font-family: 'Muli', sans-serif;
-  font-size: 1.6rem;
-}
-
-footer div{
-  display: flex;
-  flex-direction: row;
-}
-/* Fim da adição */
-
-footer>div>nav>ul>li>a {
+footer>nav>ul>li>a {
   color: rgb(0, 0, 0);
   font-size: 1.2rem;
   text-decoration: none;
@@ -329,20 +236,20 @@ footer>div>nav>ul>li>a {
   font-size: 1.8rem;
 }
 
-footer>div>nav>ul>.traco {
+footer>nav>ul>.traco {
   border-right: 1px solid #000000;
   padding: 0 5vw 0 0;
   text-align: center;
 }
 
-footer>div>nav>ul {
+footer>nav>ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
 }
 
-footer>div>nav>ul>li>a:hover {
+footer>nav>ul>li>a:hover {
   border-bottom: 2px solid white;
   text-decoration: none;
   color: white;
@@ -365,15 +272,100 @@ footer>div>nav>ul>li>a:hover {
   background: white;
   border-radius: 0.2rem;
 }
+/* Adição - pág contato */
+.icon-bg{
+  background-image: url(../img/bg-icons2.png);
+  background-repeat: repeat;
+  background-size: 35vw;  
+}
 
-.footer-contato{
+.icon-bg>img{
+  opacity: 0.1;
+}
+
+.projeto h1{
+  font-family: 'Pacifico';
+  font-size: 9rem;
+  text-transform: none;
+  font-weight: lighter;
+  color: #d6e4a4;
+  padding-top: 5%;
+}
+
+.pag-contato{
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-contato{  
+  width: 35vw;
+  padding: 5rem;
+}
+
+form div{  
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
   font-size: 2rem;
 }
 
-.socials-icons {
+form label{  
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+  text-align: left;
+}
+
+form input, form textarea{
+  border-radius: 1rem;
+}
+
+.form-contato h5{
+  font-size: 3rem;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+
+input[type="submit"]{
+  background-color:#d6e4a4;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 1.5rem;
   margin: 1rem;
-  width: 3.5rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.mapa{
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+  border-left: 0.3rem black solid;
+  padding: 5rem;
+}
+
+.mapa p{
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+}
+
+/* Fim da adição */
+
+.logos_footer{
+  width: 30rem;
+  display: flex;
+  align-items: center;
+ 
+}
+.direcao_footer{
+  flex-direction: row;
+  display: flex;
+  
+  justify-content: space-between;
+}
+
+.logo_footer_filho{
+  width: 4rem;
 }
 
 .historia {
@@ -402,7 +394,8 @@ footer>div>nav>ul>li>a:hover {
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: 85vw;
+    width: 95vw;
+    padding: 10%;
 
   }
 
@@ -412,13 +405,30 @@ footer>div>nav>ul>li>a:hover {
   }
 
   .img_produtos_filho {
+    flex-direction: row;
+
     margin-top: 10vh;
-    transform: translate(-50%);
+
+    transform: translate(-60%);
+  }
+
+  .img_produtos_filho div{
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .img_produtos_filho div img , .img_produtos_filho img{
+
+    height: 10vh;
+    width: 20vw;
+
+
   }
 
 
 
 }
+
 
 @media (max-width: 768px) {
   .menu {
@@ -431,8 +441,12 @@ footer>div>nav>ul>li>a:hover {
     background-color: #0000007a;
     border: none;
   }
+  .index_menu{
+    position: relative;
+  }
 
   .menu.active {
+    position: fixed;
     display: flex;
     top: 0;
     width: 92vw;
@@ -450,6 +464,7 @@ footer>div>nav>ul>li>a:hover {
 
   .hamburger {
     display: flex;
+    position: fixed;
   }
 
   .menu>li>a:hover {
@@ -461,62 +476,48 @@ footer>div>nav>ul>li>a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #FFC5DE;
+    background-color: #0000007a;
     color: white;
     border-bottom: solid white 2px;
-  }
-
-  /* footer */
-  
-.nome-footer{
-  display: none;
-}
-
-.socials-icons{
-  width: 3rem;
-  margin: 0.5rem;
-}
-
-.footer-contato{
-  padding: 1rem;
-  align-self: center;
-  justify-self: center;
-}
-
-.footer-contato p{
-  font-size: 1.5rem;
-}
-
-/* Página de contato */
-  .pag-contato{
-    flex-direction: column;
-  }
-
-  .form-contato{  
-    width: 100vw;
-    padding: 2rem;
-  }
-  
-  .mapa{
-    padding: 2rem;
-    border-left: none;
   }
 
   .logo {
     display: none;
   }
+  .pag-contato{
+    flex-direction: column;
+  }
 
+  .form-contato{  
+    width: 90vw;
+    padding: 2rem;
+  }
+  
+  .mapa{
+    width: 90vw;
+    padding: 2rem;
+    border-left: none;
+  }
+  iframe{
+    overflow-x: hidden;
+  }
+
+ 
   .img_produtos_filho>a>img:hover,
   .img_produtos_filho>div>a>img:hover {
     transform: scale(1);
+  
   }
-  .img_produtos_filho>div{
+
+  .img_produtos_filho>div {
     justify-content: space-between;
     gap: 1rem;
+    flex-direction: column;
   }
+
   .img_produtos_filho>a>img,
   .img_produtos_filho>div>a>img {
-    width: 21rem;
+    width: 15rem;
     height: auto;
   }
 
@@ -535,13 +536,15 @@ footer>div>nav>ul>li>a:hover {
 
   .sobre_produtos_filho h2 {
     text-align: center;
+    font-size: 5rem;
   }
 
-  .sobre_produtos_filho{
+  .sobre_produtos_filho {
     padding: 1rem;
     text-align: justify;
   }
-  .button{
+
+  .button {
     position: absolute;
     right: 50%;
     transform: translate(70%);
@@ -559,6 +562,7 @@ footer>div>nav>ul>li>a:hover {
   .carousel-inner {
     border-radius: 20px;
     margin-top: 5vh;
+    height: 40vh;
   }
 
   /* banners para celular
@@ -586,8 +590,12 @@ footer>div>nav>ul>li>a:hover {
   }
 
   */
+  .direcao_footer{
+    flex-direction: column;
+    align-items: center;
+  }
 
-  .patrocinadores {
+  .logos_footer {
     flex-direction: row;
   }
 
@@ -611,7 +619,7 @@ footer>div>nav>ul>li>a:hover {
 #cardapio {
   display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
@@ -619,21 +627,30 @@ footer>div>nav>ul>li>a:hover {
 
 .text-center {
   color: white;
-  text-shadow: #FF79BF 2px 2px 2px;
+  text-shadow: #ff0084 2px 2px 2px;
 }
 
 .cardapio-item {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #ffffff4d;
+  padding: 1rem 0;
+  border-bottom: 10px solid #ffffff4d;
+  border-right: 10px solid #ffffff4d;
   align-items: center;
-  width: auto;
+  width: 25rem;
+  height: 40vh;
+  margin-bottom: 1rem;
   font-size: 2rem;
   color: white;
   background-color: #FF79BF;
   padding: 1rem;
+  border-radius: 20px;
+}
+
+.cardapio-item img {
+  width: 100%;
+  border-radius: 15px;
 }
 
 .preco {
@@ -651,7 +668,7 @@ footer>div>nav>ul>li>a:hover {
 }
 
 .modal-body {
-  background-color:aliceblue;
+  background-color: aliceblue;
   color: black;
 }
 
@@ -782,10 +799,11 @@ footer>div>nav>ul>li>a:hover {
   main {
     margin-top: 7%;
   }
+
   #cardapio {
     display: flex;
     flex-direction: row;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: space-around;
   }
 
@@ -794,7 +812,8 @@ footer>div>nav>ul>li>a:hover {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    width: auto;
+    width: 80vw;
+    height: 35vh;
     font-size: 2rem;
     color: white;
     padding: 1rem;
