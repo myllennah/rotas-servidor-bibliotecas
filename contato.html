@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="estilos/style.css" />
+  <script src="./js/script_eventos.js"></script>
   <title> Leila Bolos- Contato </title>
 </head>
 
@@ -58,7 +59,7 @@
       <form action="contato.php" method="POST">
         <div>
           <label for="nome">Nome</label>
-          <input type="text" name="nome" required/>
+          <input id="input_nome" type="text" name="nome" required/>
         </div>
         <div>
           <label for="telefone">Telefone de contato</label>
@@ -68,7 +69,7 @@
           <label for="Mensagem">Mensagem</label>
           <textarea name="mensagem" required></textarea>
         </div>
-        <input type="submit" value="Fazer pedido"/>    
+        <button id="button">Fazer pedido</button>    
       </form>
      </div>
   
