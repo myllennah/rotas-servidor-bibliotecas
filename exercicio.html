@@ -51,7 +51,27 @@
 
   <main>
    
-    
+<input type="text" id="myText" placeholder="Seu nome">
+
+<p>envie seus dados</p>
+
+<button type="button" id="meu-botao">enviar</button>
+
+<script>
+   const campo_texto= document.getElementById('myText');
+   const btn = document.querySelector("#meu-botao");
+
+/* dois argumentos, tipo de evento e função 
+que vai acontecer após clicar no evento */
+btn.addEventListener("click", function(){
+    //eu preciso retornar preenchimento ou nao 
+    if(campo_texto.value === ''){
+      console.log(' chora cavaco ')
+    }
+    else{}
+});
+</script>
+
   </main>
 
   <footer>
