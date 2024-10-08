@@ -1,15 +1,15 @@
 // Eventos - Javascript
 
-const btn = document.querySelector("#button");
+const btn = document.querySelector("#buttonEnviar");
 document.addEventListener("DOMContentLoaded", function() {
-    const btn = document.querySelector("#button");
+    const btn = document.querySelector("#buttonEnviar");
     btn.addEventListener("click", function() {
         alert("Enviado!");
     });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const button = document.querySelector("#button");
+    const button = document.querySelector("#buttonEnviar");
 
     button.addEventListener("mouseenter", () => {
         button.style.backgroundColor = "green";
