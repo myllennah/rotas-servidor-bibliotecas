@@ -28,6 +28,11 @@ main h1 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
 .titulo_sobre {
   font-size: 3rem;
   margin: 2rem
